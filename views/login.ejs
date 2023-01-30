@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+
+<div class="welcome-note marquee">
+    <p>Welcome, please login to proceed</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Login</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/homepage" method="post">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <button id ="loginBtn" type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer"); -%>

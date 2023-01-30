@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+<h3 class="payment_header">Welcome to Payment Gateway</h3>
+    <form action="payment" method="POST">
+       <script
+          src="//checkout.stripe.com/v2/checkout.js"
+          class="stripe-button"
+          data-key="<%= key %>"
+          data-amount="2500000"
+          data-currency="NGN"
+          data-name="Minna Court"
+          data-description="Case Filing Fee"
+          data-locale="auto" >
+        </script>
+    </form>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,49 @@
+<%- include("partials/header"); -%>
+
+<div class="grid-container">
+  <div class="container grid-1 details-form">
+    <h2>Fill in Case Details</h2>
+    <form action="/details" method="post">
+
+      <label for="name">Full Name</label>
+      <input class="form-control" type="text" id="name" name="name" placeholder="Your name..">
+
+      <label for="case_type">Case Type</label>
+      <select id="case_type" name="case_type" class="form-control">
+        <option name = "civil" value="civil">Civil Case</option>
+        <option name ="criminal" value="criminal">Criminal Case</option>
+      </select>
+
+      <label for="description">Case Description</label>
+      <textarea class="form-control" id="description" name="description" placeholder="case description.."></textarea>
+
+      <button class="btn btn-dark" type="submit" value="Submit"> Submit </button>
+    </form>
+  </div>
+  
+  <div id="snackbar"> Details Saved Successfully</div>
+  
+  <div class="container grid-2 chat">
+    <h3>Chat With Court Registrar</h3>
+    <br>
+    <div id="messages">
+     
+    </div>
+      <input id="message" name = "input" type = "text" class="form-control" placeholder="Your Message Here">
+      <button id="send " class="btn btn-dark">Send</button>
+  </div>
+  </div>
+  <br>
+  <a id="payment_btn" class="btn btn-success chat_button" href="/payment">Proceed to Payment Page</a>
+
+  
+  <div class="upload_area grid-3">
+    <h4>Upload Case Files</h4>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" id="file" multiple>
+      <input class="btn-dark" type="submit" value="Upload">
+    </form>
+  </div>
+</div>
+
+  <%- include("partials/footer"); -%>
