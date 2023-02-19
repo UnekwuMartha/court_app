@@ -1,7 +1,33 @@
 <%- include("partials/header"); -%>
 
-<button id = "case_logs" class="btn btn-dark"> Show Case Logs</button>
+<!-- <button id = "case_logs" class="btn btn-dark"> Show Case Logs</button>
 
-<a href="/chat" class="btn btn-dark"> Chat With Client</button>
+<a href="/chat" class="btn btn-dark"> Chat With Client</button> -->
+        <div class="container case_log">
+          <h1>View Case Logs</h1>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Case Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% users.forEach(function(user) { %>
+              <tr>
+                <td><%= user._id %></td>
+                <td><%= user.name %></td>
+                <td><%= user.case_type %></td>
+                <td><%= user.description %></td>
+              </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+      </body>
+    </html>
+    
 
 <%- include("partials/footer"); -%>

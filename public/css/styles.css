@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font: 13px Helvetica, Arial;
+    font: 13px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card{
@@ -21,7 +21,7 @@ body {
     background-color: #beb9b3;
     padding: 40px 10px;
     margin: 0 0 50px 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   /* Style the header links */
@@ -38,7 +38,7 @@ body {
 
   .header h1 {
     text-align: center;
-    
+    width: 50%;
     font-size: 3em;
     font-weight: 600;
     margin: auto;
@@ -107,16 +107,22 @@ form {
 
 .form input {
   border: 0;
-  padding: 10px;
-  width: 90%;
-  margin-right: 0.5%;
+  padding: 0.5rem;
+  width: 100%;
+  outline: 0;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  background: #ccc
 }
 
 .form button {
-  width: 9%;
-  background: rgb(130, 224, 255);
+  width: 6rem;
+  background-color: #5e747a;
+  color: white;
   border: none;
-  padding: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
 }
 
 .chat {
@@ -131,7 +137,7 @@ form {
 
 #messages {
   list-style-type: none;
-  color: #000;
+  color: rgb(10, 10, 10);
   background-color: #fff;
 }
 
@@ -140,7 +146,7 @@ form {
 }
 
 #messages div:nth-child(odd) {
-  background: #eee;
+  background: #eeeeeee8;
 }
 
 #message {
@@ -182,6 +188,11 @@ form {
   margin: auto;
   border-radius: 10px;
   padding: 5px;
+}
+
+.case_log {
+  background-color: #beb9b3;
+  padding: 10px;
 }
 
 

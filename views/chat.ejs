@@ -12,7 +12,18 @@
       <select id="case_type" name="case_type" class="form-control">
         <option name = "civil" value="civil">Civil Case</option>
         <option name ="criminal" value="criminal">Criminal Case</option>
+        <option name ="civil_summons" value="civil_summons">Civil Summons</option>
+        <option name ="writ_of_summons" value="writ_of_summons">Writ of Summons</option>
+        <option name ="originating_summons" value="originating_summons">Originating Summons</option>
+        <option name ="statement_of_claim" value="statement_of_claim">Statement of Claim</option>
+        <option name ="statement_of_defence" value="statement_of_defence">Statement of Defence</option>
+        <option name ="counter_affidavit" value="counter_affidavit">Counter Affidavit</option>
+        <option name ="reply_to_counter_affidavit" value="reply_to_counter_affidavit">Reply to Counter Affidavit</option>
+        <option name ="writ_of_execution" value="writ_of_execution">Writ of Execution</option>
       </select>
+
+      <label for="number">Phone Number</label>
+      <input class="form-control" id="number" name="number" placeholder="Phone Number">
 
       <label for="description">Case Description</label>
       <textarea class="form-control" id="description" name="description" placeholder="case description.."></textarea>
@@ -29,8 +40,10 @@
     <div id="messages">
      
     </div>
-      <input id="message" name = "input" type = "text" class="form-control" placeholder="Your Message Here">
-      <button id="send " class="btn btn-dark">Send</button>
+    <div class="chat">
+      <input id="message" name = "msg" type = "text" class="form-control" placeholder="Your Message Here">
+      <button id="send" class="btn btn-dark">Send</button>
+    </div>
   </div>
   </div>
   <br>
@@ -45,5 +58,5 @@
     </form>
   </div>
 </div>
-
+<script src="/socket.io/socket.io.js"></script>
   <%- include("partials/footer"); -%>
