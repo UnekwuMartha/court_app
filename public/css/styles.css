@@ -139,13 +139,17 @@ form {
   list-style-type: none;
   color: rgb(10, 10, 10);
   background-color: #fff;
+  text-align: left;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
 }
 
-#messages div {
+#messages p {
   padding: 5px 10px;
 }
 
-#messages div:nth-child(odd) {
+#messages p:nth-child(odd) {
   background: #eeeeeee8;
 }
 

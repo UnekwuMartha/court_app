@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "site": "minna-courts",
-    "public": "public",
+    "public": "court_case_app",
     "ignore": [
       "firebase.json",
       "**/.*",
