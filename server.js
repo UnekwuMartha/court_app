@@ -239,6 +239,6 @@ app.post('/payment', function (req, res) {
 })
 
 //server connection
-http.listen(3000, '0.0.0.0', function () {
+http.listen(process.env.PORT || 3000, function () {
   console.log("Server is running on port 3000 ");
 });
